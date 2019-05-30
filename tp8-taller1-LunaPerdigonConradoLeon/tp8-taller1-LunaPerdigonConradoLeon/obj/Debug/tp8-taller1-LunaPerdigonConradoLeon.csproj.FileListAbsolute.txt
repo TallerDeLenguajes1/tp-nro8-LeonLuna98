@@ -1,0 +1,8 @@
+E:\tp8.taller1\tp8-taller1-LunaPerdigonConradoLeon\tp8-taller1-LunaPerdigonConradoLeon\bin\Debug\tp8-taller1-LunaPerdigonConradoLeon.exe.config
+D:\tp8.taller1\tp8-taller1-LunaPerdigonConradoLeon\tp8-taller1-LunaPerdigonConradoLeon\bin\Debug\tp8-taller1-LunaPerdigonConradoLeon.exe.config
+D:\tp8.taller1\tp8-taller1-LunaPerdigonConradoLeon\tp8-taller1-LunaPerdigonConradoLeon\bin\Debug\tp8-taller1-LunaPerdigonConradoLeon.exe
+D:\tp8.taller1\tp8-taller1-LunaPerdigonConradoLeon\tp8-taller1-LunaPerdigonConradoLeon\bin\Debug\tp8-taller1-LunaPerdigonConradoLeon.pdb
+D:\tp8.taller1\tp8-taller1-LunaPerdigonConradoLeon\tp8-taller1-LunaPerdigonConradoLeon\obj\Debug\tp8-taller1-LunaPerdigonConradoLeon.csprojAssemblyReference.cache
+D:\tp8.taller1\tp8-taller1-LunaPerdigonConradoLeon\tp8-taller1-LunaPerdigonConradoLeon\obj\Debug\tp8-taller1-LunaPerdigonConradoLeon.csproj.CoreCompileInputs.cache
+D:\tp8.taller1\tp8-taller1-LunaPerdigonConradoLeon\tp8-taller1-LunaPerdigonConradoLeon\obj\Debug\tp8-taller1-LunaPerdigonConradoLeon.exe
+D:\tp8.taller1\tp8-taller1-LunaPerdigonConradoLeon\tp8-taller1-LunaPerdigonConradoLeon\obj\Debug\tp8-taller1-LunaPerdigonConradoLeon.pdb
