@@ -1,6 +1,18 @@
-Nombre;Apellido;Estado Civil;Sueldo;Genero;Cargo
-Jorge;López;Soltero;12000;Masculino;Auxiliar
-Marina;Cruz;Soltero;15000;Femenino;Ingeniero
-Lucia;Garcia;Casado;20000;Femenino;Administrativo
-Mario;Sanchez;Viudo;17000;Masculino;Especialista
-Jeronimo;Gomez;Casado;16000;Maculino;Ingeniero
+Marina;Cruz;Soltero;15000;Femenino;Ingeniero;
+Lucia;Garcia;Casado;20000;Femenino;Administrativo;
+Mario;Sanchez;Viudo;17000;Masculino;Especialista;
+Jeronimo;Gomez;Casado;16000;Maculino;Ingeniero;
+Ana;Dewitt;Soltero;5280;Masculino;Administrativo;
+Ismael;Marquez;Otro;9116;Femenino;Investigador;
+Facundo;Tula;Casado;6310;Masculino;Auxiliar;
+Luciano;Tula;Soltero;6148;Masculino;Auxiliar;
+Luciana;Tula;Otro;8874;Femenino;Ingeniero;
+Facundo;Avellaneda;Soltero;5059;Masculino;Administrativo;
+Luz;Martinez;Otro;9101;Femenino;Investigador;
+Ismael;Avellaneda;Casado;6724;Masculino;Auxiliar;
+Facundo;Martinez;Soltero;5938;Masculino;Administrativo;
+Leona;Lopez;Otro;9334;Femenino;Investigador;
+Abril;Martinez;Viudo;7585;Femenino;Especialista;
+Luz;Avellaneda;Otro;9687;Femenino;Investigador;
+Facundo;Avellaneda;Casado;7248;Masculino;Especialista;
+Luz;Lopez;Viudo;7706;Femenino;Especialista

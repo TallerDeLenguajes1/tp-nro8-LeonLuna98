@@ -7,7 +7,6 @@ using System.Threading.Tasks;
 
 namespace tp8_taller1_LunaPerdigonConradoLeon
 {
-
     public enum elcargo
     {
         Auxiliar, Administrativo, Ingeniero, Especialista, Investigador
@@ -21,31 +20,26 @@ namespace tp8_taller1_LunaPerdigonConradoLeon
         Soltero, Casado, Viudo, Otro
     }
 
-    /*public struct fechas
+    public struct fechas
     {
-        int dia;
-        int mes;
-        int anio;
+        public int dia;
+        public int mes;
+        public int anio;
 
-    }
-    */
+    } 
 
-
-    public struct Empleado
+    public class Empleado
     {
-
-        private string nombre;
+        string nombre;
         string apellido;
         elestadocivil estadocivil;
         elgenero genero;
         elcargo cargo;
-       /* fechas fechanacimiento;
-        fechas fechaingreso;*/
-        double sueldo;
-
-
+        fechas fechanacimiento;
+        fechas fechaingreso;
+        double sueldo;      
        
-        public Empleado(string _nombre, string _apellido, elestadocivil _estadocivil, double _sueldo, elgenero _genero, elcargo _cargo/*, fechas _fechanacimiento, fechas _fechaingreso*/)
+        public Empleado(string _nombre, string _apellido, elestadocivil _estadocivil, double _sueldo, elgenero _genero, elcargo _cargo, fechas _fechanacimiento, fechas _fechaingreso)
         {
             nombre = _nombre;
             apellido = _apellido;
@@ -53,64 +47,161 @@ namespace tp8_taller1_LunaPerdigonConradoLeon
             cargo = _cargo;
             genero = _genero;
             sueldo = _sueldo;
-           /* fechanacimiento = _fechanacimiento;
-            fechaingreso = _fechaingreso;*/
+           fechanacimiento = _fechanacimiento;
+            fechaingreso = _fechaingreso;
 
         }
-
-     
+  
         public void mostrarcontacto()
         {
-            Console.WriteLine(nombre);
-            Console.WriteLine(apellido);
-            Console.WriteLine(estadocivil);
-            Console.WriteLine(genero);
-            Console.WriteLine(cargo);
-            Console.WriteLine(sueldo);
-            /*Console.WriteLine(@"{0}  / {1} / {2}", fechanacimiento.dia, fechanacimiento.mes, fechanacimiento.anio);
-            Console.WriteLine(@"{0}  / {1}  / {2}", fechaingreso.dia, fechaingreso.mes, fechaingreso.anio);*/
+            Console.WriteLine(Nombre);
+            Console.WriteLine(Apellido);
+            Console.WriteLine(Estadocivil);
+            Console.WriteLine(Genero);
+            Console.WriteLine(Cargo);
+            Console.WriteLine(Sueldo);
+            Console.WriteLine(@"{0}  / {1} / {2}", Fechanacimiento.dia, Fechanacimiento.mes, Fechanacimiento.anio);
+            Console.WriteLine(@"{0}  / {1}  / {2}", Fechaingreso.dia, Fechaingreso.mes, Fechaingreso.anio);
             Console.WriteLine("--------------");
         }
 
+        public int elanio_actual =2019;
 
-        //el fin de la estructura
-        //public int elanio_actual =2019;
-
-       /* public int AniosTrabajados(int anio_actual)
+        public string Nombre
         {
-            return anio_actual -  fechaingreso.anio;
-
-        }
-
-
-        public int EdadEmpleado(int anio_actual)
-        {
-            return anio_actual - fechanacimiento.anio;
-        }
-
-        public int Antiguedad(int anio_actual)
-        {
-            return anio_actual - fechaingreso.anio;
-        }*/
-
-       /* public void AniosJubilacion(int anio_actual)
-        {
-            int aniosParajubilacion;
-
-            if (genero == elgenero.Masculino)
-            { //si es masculino
-                aniosParajubilacion = 65 - EdadEmpleado(2019);
-                Console.WriteLine("El empleado se jubilara  {0} anios", aniosParajubilacion);
+            get
+            {
+                return nombre;
             }
 
-            if (genero == elgenero.Femenino)
-            {//si es femenino
-                aniosParajubilacion = 60 - EdadEmpleado(2019);
-                Console.WriteLine("El empleado se jubilara  {0} anios", aniosParajubilacion);
+            set
+            {
+                nombre = value;
             }
-        }*/
+        }
+
+        public string Apellido
+        {
+            get
+            {
+                return apellido;
+            }
+
+            set
+            {
+                apellido = value;
+            }
+        }
+
+        public elestadocivil Estadocivil
+        {
+            get
+            {
+                return estadocivil;
+            }
+
+            set
+            {
+                estadocivil = value;
+            }
+        }
+
+        public elgenero Genero
+        {
+            get
+            {
+                return genero;
+            }
+
+            set
+            {
+                genero = value;
+            }
+        }
+
+        public elcargo Cargo
+        {
+            get
+            {
+                return cargo;
+            }
+
+            set
+            {
+                cargo = value;
+            }
+        }
+
+        public fechas Fechanacimiento
+        {
+            get
+            {
+                return fechanacimiento;
+            }
+
+            set
+            {
+                fechanacimiento = value;
+            }
+        }
+
+        public fechas Fechaingreso
+        {
+            get
+            {
+                return fechaingreso;
+            }
+
+            set
+            {
+                fechaingreso = value;
+            }
+        }
+
+        public double Sueldo
+        {
+            get
+            {
+                return sueldo;
+            }
+
+            set
+            {
+                sueldo = value;
+            }
+        }
+
+        public int AniosTrabajados(int anio_actual)
+         {
+             return anio_actual -  Fechaingreso.anio;
+         }
 
 
+         public int EdadEmpleado(int anio_actual)
+         {
+             return anio_actual - Fechanacimiento.anio;
+         }
+
+         public int Antiguedad(int anio_actual)
+         {
+             return anio_actual - Fechaingreso.anio;
+         }
+
+        public void AniosJubilacion(int anio_actual)
+         {
+             int aniosParajubilacion;
+
+             if (Genero == elgenero.Masculino)
+             { //si es masculino
+                 aniosParajubilacion = 65 - EdadEmpleado(2019);
+                 Console.WriteLine("El empleado se jubilara  {0} anios", aniosParajubilacion);
+             }
+             if (Genero == elgenero.Femenino)
+             {//si es femenino
+                 aniosParajubilacion = 60 - EdadEmpleado(2019);
+                 Console.WriteLine("El empleado se jubilara  {0} anios", aniosParajubilacion);
+             }
+        }
 
     }
 
